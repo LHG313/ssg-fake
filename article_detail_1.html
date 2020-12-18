@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script data-ad-client="ca-pub-4525091557480868" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NNXVD04DN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4NNXVD04DN');
+</script>
+<meta charset="UTF-8" />
+<title>명언</title>
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="app.css" />
+<meta name="google-site-verification" content="pIOKCfV5zokT16iQt4AaWGPtvcVm9VWR2Cc5z-zOaRg" />
+</head>
+<body>
+	<div class="body-content min-height-100vh flex flex-column">
+		<!-- 로고바 시작 -->
+		<header class="logo-bar con-min-width">
+			<div class="con height-100p flex flex-jc-c">
+				<a href="#" class="logo flex flex-ai-c">
+					 <i class="fab fa-mailchimp"></i>
+					<span>
+						Imagin<span>n</span>ary
+					</span>
+				</a>
+			</div>
+		</header>
+		<!-- 로고바 끝 -->
+
+		<!-- 메뉴바 시작 -->
+		<header class="menu-bar con-min-width">
+			<div class="con height-100p">
+				<nav class="menu-bar__menu-1">
+					<ul class="flex">
+						<li>
+							<a href="./" class="block">
+								<i class="fas fa-home"></i>
+								<span>HOME</span>
+							</a>
+						</li>
+						<li>
+							<a class="block">
+								<i class="fas fa-list"></i>
+								<span>ARTICLES</span>
+							</a>
+							<ul>
+								<li><a href="article_list_java_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>NOTICE LIST</span></a></li><li><a href="article_list_java_1.html" class="block"><i class="fas fa-clipboard-list"></i> <span>NOTICE LIST</span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="block">
+								<i class="fas fa-link"></i>
+								<span>LINK</span>
+							</a>
+							<ul>
+								<li>
+									<a href="https://jhs512.github.io/blog/" target="_blank"
+										class="block">
+										<i class="fab fa-blogger-b"></i>
+										<span>BLOG</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/" target="_blank" class="block">
+										<i class="fab fa-github"></i>
+										<span>GITHUB</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="stat.html" class="block">
+								<i class="fas fa-chart-pie"></i>
+								<span>STATISTICS</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- 메뉴바 끝 -->
+
+		<main class="flex-grow-1">
+			<section class="title-bar con-min-width">
+				<h1 class="con">
+					<i class="fas fa-file-alt"></i> <span>ARTICLE DETAIL</span>
+				</h1>
+			</section><!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
+
+<!-- 토스트 UI 에디터, 자바스크립트 코어 -->
+<script
+	src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+
+<!-- 코드 미러 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/codemirror.min.css" />
+<!-- 토스트 UI 에디터, CSS 코어 -->
+<link rel="stylesheet"
+	href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+
+<!-- 토스트 UI 에디터, 신택스 하이라이트 플러그인 추가 -->
+<script
+	src="https://uicdn.toast.com/editor-plugin-code-syntax-highlight/latest/toastui-editor-plugin-code-syntax-highlight.min.js"></script>
+
+<section class="section-1 con-min-width">
+	<div class="con">
+		<div class="article-detail">
+			<h2 class="article-detail__title">java 문자열에서 부분 추출하기</h2>
+
+			<div class="article-detail__sub-info flex">
+				<div class="article-detail__board-name">JAVA</div>
+				<div class="article-detail__reg-date">2020-12-17 20:55:32</div>
+				<div class="article-detail__writer">이회구</div>
+			</div>
+
+			<div class="article-detail__body main-font"># 자바 문자열 분리해서 추출하기
+```java
+    // charAt(문장 중에 인덱스 위치에 해당문자 추출)
+    
+    //인덱스 범위 0~6
+    String aaa = \"가나다라마바사\";
+    
+    // 인덱스3을 출력하면 \"라\"가 출력됩니다.
+    char data = aaa.charAt(3);    
+
+    System.out.println(data);
+    //출력값 : 라
+
+    //subString (원하는 범위만큼 문자열 추출)
+
+    // 인덱스 범위 0~6
+    String aaa = "가나다라마바사";
+    
+    //2~5에 해당되는 문자열 부분 추출   
+    String data = aaa.substring(2,5);    
+    
+    System.out.println(data);
+    //출력값: 다라마
+
+    //split(주어진 문자로 분리하여 배열에 저장)
+
+    // 띄어쓰기를 포함한 문장
+    String aaa = "가나 다라마 바 사";
+
+    //split으로 띄어쓰기를 구분하여 배열에 저장
+    String[] data = aaa.split(" ");
+
+    //구분된 배열을 배열의 길이만큼 출력
+    for (int i = 0; i < data.length; i++) {
+    System.out.println(data[i]);
+    }
+    
+    //출력값: 가나
+             다라 
+             바
+             사   
+    
+
+
+    //split 2탄
+
+        //구분은 &와 ,(쉼표)와 -로 구분
+        String aaa = "안녕&하세요,반갑-습니다";
+		
+        
+        // &와 ,(쉼표)와 -로 구분해보면
+        String[] data = aaa.split("&|,|-");
+
+		for (int i = 0; i < data.length; i++) {
+			System.out.println(data[i]);
+		}
+
+        //출력값: 안녕
+                 하세요
+                 반갑
+                 습니다
+
+
+```
+ </div>
+
+			<div class="article-detail__reply-box">
+				<div id="disqus_thread"></div>
+				<script>
+					(function() { // DON'T EDIT BELOW THIS LINE
+						var d = document, s = d.createElement('script');
+						s.src = 'https://my-smg.disqus.com/embed.js';
+						s.setAttribute('data-timestamp', +new Date());
+						(d.head || d.body).appendChild(s);
+					})();
+				</script>
+				<noscript>
+					Please enable JavaScript to view the <a
+						href="https://disqus.com/?ref_noscript">comments powered by
+						Disqus.</a>
+				</noscript>
+
+			</div>
+
+			<div class="article-detail__menu flex">
+				<a title=""
+					href="article_detail_0.html"
+					class="hover-underline none">&lt;
+					이전글</a> <a href="article_list_java_1.html"
+					class="hover-underline ">목록</a>
+				<a title="java 문자열에서 숫자만 추출"
+					href="article_detail_2.html"
+					class="hover-underline ">다음글
+					&gt;</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+</main>
+
+<footer class="bottom-bar con-min-width">
+	<div class="con flex flex-ai-c">
+		<a href="#" class="logo logo--mini flex flex-ai-c">
+			       <i class="fab fa-mailchimp"></i>
+			<span>
+				Imagin<span>n</span>ary
+			</span>
+		</a>
+
+		<div class="bottom-bar__site-info">Lorem ipsum dolor sit amet
+			consectetur adipisicing elit. Dolorum eos ipsum necessitatibus
+			doloremque quos voluptate debitis earum aut a consequuntur explicabo
+			deleniti qui eius facere, harum error eveniet vel laudantium.</div>
+	</div>
+</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
